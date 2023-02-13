@@ -1,0 +1,61 @@
+div{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    font-family: cursive;
+    margin: 1px;
+}
+
+.conteiner{
+    display: flex;
+}
+
+.conteiner{
+    margin: auto;
+}
+
+section{
+    display: flex;
+    width: 600px;
+    height: 600;
+    position: relative;
+
+}
+section img{
+    width: 0;
+    flex-grow: 3;
+    object-fit: cover;
+    opacity: .5;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor:crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(130%);
+ }
+
+
+ @keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity:0 ;
+    }
+    
+    
+ }
+ 
+ .loader::after
+ .loader::before{
+    animation:loader 2s linear infinite
+    content
+    border.2px solid #fff;
+    width:48px;
+    height:48px;
+    position:absolute;
+    
+ }
